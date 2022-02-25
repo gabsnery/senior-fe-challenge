@@ -62,6 +62,6 @@ title |true| string |  | Panel's title
 Name | Mandatory | Type | Default value | Description 
 --- | --- | --- | --- | --- |
 children |true| React.ReactElement<TabPaneProps>[] |  | Panels
-initialActive |false| string |  | When uncontrolled, first tab to render (title)
-active |false| string |  | When controlled, current tab(title) selected 
+initialActive |false| string |  | When uncontrolled, title of first tab to render
+active |false| string |  | When controlled, title of current tab selected 
 onActiveChange | false | (e: any) => void |  | function called when component controlled that return the title of selected Tab
