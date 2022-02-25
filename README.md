@@ -1,8 +1,9 @@
 # senior-fe-challenge
 Test Challenge: Tabulator Component
-
+![Animação](https://user-images.githubusercontent.com/12504922/155807739-5ba478e8-fcb3-4c2e-83f4-ab095b363844.gif)
 ## Install
 `npm i senior-fe-challenge`
+
 
 ## Controlled/Uncontrolled
 The component gives the possibility to function as controlled or uncontrolled.
