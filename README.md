@@ -8,7 +8,7 @@ Test Challenge: Tabulator Component
 The component gives the possibility to function as controlled or uncontrolled.
 ### Controlled
 ```
-  import { Tab, TabPane } from './components/Tab'
+  import { Tab, TabPane } from 'senior-fe-challenge'
   
   function App() {
   
@@ -33,7 +33,7 @@ The component gives the possibility to function as controlled or uncontrolled.
 ```
 ### Unontrolled
 ```
-  import { Tab, TabPane } from './components/Tab'
+  import { Tab, TabPane } from 'senior-fe-challenge'
   
   function App() {
     return(
