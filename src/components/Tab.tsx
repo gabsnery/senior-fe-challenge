@@ -39,9 +39,9 @@ export function Tab(props: TabProps): JSX.Element {
     }
     return <>
         <div style={{
-            color: 'red', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gridAutoColumns: 'auto', cursor: 'pointer', gridAutoRows: 'column'
-        }}>{children.map((item, index) => (<div  data-testid ={`Tab${item.props.title}`} key={`key${index}`} onClick={() => {handlePanelClick(item.props.title) }}>{item['props']['title']}</div>))}</div>
-        <div style={{ borderTop: '1px solid grey' }} data-testid ={`TabPane${SelectedTab}`}>
+            color: '#E93A53', display: 'grid', gridTemplateColumns: 'repeat(auto-fit)', gridAutoColumns: 'auto', cursor: 'pointer', gridAutoRows: 'column'
+        }}>{children.map((item, index) => (<div  data-testid ={`Tab${item.props.title}`} style={{borderWidth:'2px 2px 0px 2px',paddingBottom:'5px',borderStyle:'solid',borderColor:'#E93A53'}} key={`key${index}`} onClick={() => {handlePanelClick(item.props.title) }}>{item['props']['title']}</div>))}</div>
+        <div style={{ borderTop: '1px solid #E93A53' }} data-testid ={`TabPane${SelectedTab}`}>
         {children.find(x=>x.props.title===SelectedTab)}
 
         </div>
@@ -75,10 +75,10 @@ export function Tab2(props: TabProps): JSX.Element {
         }
     }
     return <>
-        <div style={{
-            color: 'red', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gridAutoColumns: 'auto', cursor: 'pointer', gridAutoRows: 'column'
-        }}>{children.map((item, index) => (<div  data-testid ={`Tab${item.props.title}`} key={`key${index}`} onClick={() => { console.log('item.props.value', item.props.title); handlePanelClick(item.props.title) }}>{item['props']['title']}</div>))}</div>
-        <div style={{ borderTop: '1px solid grey' }}>
+          <div style={{
+            color: '#E93A53', display: 'grid', gridTemplateColumns: 'repeat(auto-fit)', gridAutoColumns: 'auto', cursor: 'pointer', gridAutoRows: 'column'
+        }}>{children.map((item, index) => (<div  data-testid ={`Tab${item.props.title}`} style={{borderWidth:'2px 2px 0px 2px',paddingBottom:'5px',borderStyle:'solid',borderColor:'#E93A53'}} key={`key${index}`} onClick={() => {handlePanelClick(item.props.title) }}>{item['props']['title']}</div>))}</div>
+         <div style={{ borderTop: '1px solid grey' }}>
             {children.map((item, index) => {
                 return (<div key={`Panelkey${index}`} hidden={SelectedTab !== item.props.title}>{item}</div>);
             })}
