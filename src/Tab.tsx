@@ -5,9 +5,9 @@ interface TabPaneProps {
 }
 export type TabProps = {
     children: React.ReactElement<TabPaneProps>[],
-    initialActive?: any;
-    active?: any;
-    onActiveChange?: (e: any) => void;
+    initialActive?: string;
+    active?: string;
+    onActiveChange?: (e: string) => void;
 }
 export function Tab(props: TabProps): JSX.Element {
     const [SelectedTab, setSelectedTab] = useState('');

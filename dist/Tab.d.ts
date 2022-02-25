@@ -4,9 +4,9 @@ interface TabPaneProps {
 }
 export declare type TabProps = {
     children: React.ReactElement<TabPaneProps>[];
-    initialActive?: any;
-    active?: any;
-    onActiveChange?: (e: any) => void;
+    initialActive?: string;
+    active?: string;
+    onActiveChange?: (e: string) => void;
 };
 export declare function Tab(props: TabProps): JSX.Element;
 export declare function Tab2(props: TabProps): JSX.Element;

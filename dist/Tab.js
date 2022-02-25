@@ -24,8 +24,6 @@ function Tab(props) {
             setSelectedTab(active);
         }
     }, [active]);
-    (0, react_1.useEffect)(() => {
-    }, [SelectedTab]);
     const handlePanelClick = (v) => {
         if (onActiveChange) {
             onActiveChange(v);
